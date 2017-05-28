@@ -1,0 +1,1259 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 100';
+  src: url("../fonts/MuseoSansCyrl-100.eot");
+  src: url("../fonts/MuseoSansCyrl-100.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSansCyrl-100.woff2") format('woff2'),url("../fonts/MuseoSansCyrl-100.woff") format('woff'),url("../fonts/MuseoSansCyrl-100.ttf") format('truetype'),url("../fonts/MuseoSansCyrl-100.svg#MuseoSansCyrl-100") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 900';
+  src: url("../fonts/MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl-900.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSansCyrl-900.woff2") format('woff2'),url("../fonts/MuseoSansCyrl-900.woff") format('woff'),url("../fonts/MuseoSansCyrl-900.ttf") format('truetype'),url("../fonts/MuseoSansCyrl-900.svg#MuseoSansCyrl-900") format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSansCyrl-700.woff2") format('woff2'),url("../fonts/MuseoSansCyrl-700.woff") format('woff'),url("../fonts/MuseoSansCyrl-700.ttf") format('truetype'),url("../fonts/MuseoSansCyrl-700.svg#MuseoSansCyrl-700") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl-500.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSansCyrl-500.woff2") format('woff2'),url("../fonts/MuseoSansCyrl-500.woff") format('woff'),url("../fonts/MuseoSansCyrl-500.ttf") format('truetype'),url("../fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl-300.eot?#iefix") format('embedded-opentype'),url("../fonts/MuseoSansCyrl-300.woff2") format('woff2'),url("../fonts/MuseoSansCyrl-300.woff") format('woff'),url("../fonts/MuseoSansCyrl-300.ttf") format('truetype'),url("../fonts/MuseoSansCyrl-300.svg#MuseoSansCyrl-300") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("../fonts/MinionPro-Regular.eot");
+  src: url("../fonts/MinionPro-Regular.eot?#iefix") format('embedded-opentype'),url("../fonts/MinionPro-Regular.woff2") format('woff2'),url("../fonts/MinionPro-Regular.woff") format('woff'),url("../fonts/MinionPro-Regular.ttf") format('truetype'),url("../fonts/MinionPro-Regular.svg#MinionPro-Regular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: url("../img/fon-body.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700vh;
+}
+
+.row-header_top {
+  height: 8rem;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.row-header_top .col-mail,
+.row-header_top .col-tel {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.row-header_top .col-mail span {
+  font-size: 1.6rem;
+  font-family: 'Museo Sans Cyrl 300';
+  color: #393945;
+}
+
+.row-header_top .col-tel span {
+  font-size: 2rem;
+  font-family: "Museo Sans Cyrl 900";
+  color: #393945;
+}
+
+.row-header_top .col-ico {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.row-header_top .col-ico i {
+  padding-right: 1.4rem;
+  font-size: 1.4rem;
+  color: #cdcdcf;
+}
+
+.row-header_top .col-ico i:hover {
+  color: #fe5c2e;
+}
+
+.row-header_main {
+  background-color: #fafafa;
+  box-shadow: 0 -15px 15px -2px rgba(219,219,219,.4);
+}
+
+.row-header_main .row-header_menu {
+  margin-top: 9rem;
+  text-align: left;
+}
+
+.row-header_main .row-header_content .col-content_text,
+.row-header_main .row-header_menu .col-header_menu {
+  padding: 0;
+}
+
+.row-header_main .row-header_menu .col-header_menu ul li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
+.row-header_main .row-header_menu .col-header_menu ul li a {
+  font-size: 1.5rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #7b7b81;
+  text-decoration: none;
+  padding-bottom: .7rem;
+}
+
+.row-header_main .row-header_menu .col-header_menu ul li a:hover {
+  border-bottom: 2px solid #fe5c2e;
+  color: #393945;
+}
+
+.row-header_main .row-header_menu .find-icon i {
+  font-size: 1.5rem;
+  color: #393945;
+}
+
+.row-header_main .row-header_menu .find-icon i:hover,
+.row-header_main .row-header_top .font-header_top:hover {
+  cursor: pointer;
+  color: #fe5c2e;
+}
+
+.row-header_main .row-header_content {
+  margin-top: 6rem;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.row-header_main .row-header_content .col-content_text h1,
+.row-header_main .row-header_content .col-content_text h2 {
+  font-size: 5.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: rgba(57,57,69,.9);
+  -webkit-transform: scaleX(1.0052);
+  -moz-transform: scaleX(1.0052);
+  -ms-transform: scaleX(1.0052);
+  -o-transform: scaleX(1.0052);
+  transform: scaleX(1.0052);
+  margin-bottom: 4rem;
+}
+
+.row-header_main .row-header_content .col-content_text h2 {
+  font-size: 1.8rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: rgba(57,57,69,.7);
+  line-height: 2.6rem;
+}
+
+.row-header_main .row-header_content .col-content_text a {
+  display: inline-block;
+  width: 27rem;
+  height: 6rem;
+  border-radius: 5px;
+  background-color: #fe5c2e;
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fff;
+  text-align: center;
+  line-height: 6rem;
+  text-decoration: none;
+}
+
+.row-header_main .row-header_content .col-content_text a:hover {
+  background-color: #db411b;
+}
+
+.row-header_main .row-header_content .col-content_text a i {
+  padding-left: 2rem;
+  position: relative;
+  top: .2rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.row-header_main .row-header_content .col-content_text span {
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fe5c2e;
+}
+
+.row-header_main .row-header_top {
+  margin-top: 5rem;
+}
+
+.row-header_main .row-header_top p,
+.systems .row-tab_content .col-tab_content .tab-content_ul li {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+}
+
+.row-header_main .row-header_plus {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.row-header_main .row-header_plus .col-header_plus {
+  height: 30rem;
+  padding-top: 7rem;
+}
+
+.row-header_main .row-header_plus .col-header_plus:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+  background: url("../img/header/hover.png") no-repeat 7.5rem 6rem;
+}
+
+.row-header_main .row-header_plus .col-header_plus h1 {
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 900";
+  color: #393945;
+  text-transform: uppercase;
+  line-height: 1.375;
+}
+
+.row-header_main .row-header_plus .col-header_plus h2 {
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 1.375;
+}
+
+.row-header_main .row-bottom_plus {
+  margin-top: 3rem;
+}
+
+.row-header_main .row-bottom_plus .col-bottom_plus {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.row-header_main .row-bottom_plus .col-bottom_plus h2 {
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fe5c2e;
+}
+
+.row-header_main .row-bottom_plus .col-bottom_plus h1 {
+  font-size: 2.2rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #fe5c2e;
+  text-decoration: underline;
+}
+
+.decision,
+.stage,
+.systems {
+  text-align: center;
+}
+
+.decision .row-decision_h1 .col-decision_h1 h1 {
+  font-size: 4.3rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  line-height: 9rem;
+}
+
+.decision .row-decision_h2 .col-decision_h2 h2 {
+  margin: auto;
+  width: 52rem;
+  font-size: 1.8rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 2.4rem;
+}
+
+.decision .row-decision_tab {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab {
+  width: 36rem;
+  height: 24rem;
+  padding-left: 4.5rem;
+  padding-right: 2.5rem;
+  background-color: #fff;
+  text-align: left;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab h1 {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  line-height: 3.332;
+  text-align: left;
+  width: 18rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab h2 {
+  margin: 0;
+  width: 30rem;
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  line-height: 2.2rem;
+  text-align: left;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab h3 {
+  font-size: 1.5rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 2.2rem;
+  text-align: left;
+  width: 29rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .decision-open {
+  z-index: 20;
+  position: absolute;
+  bottom: 3rem;
+  height: 2rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .decision-open span {
+  font-size: 1.2rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fe5c2e;
+  line-height: 4.998;
+  text-align: left;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .decision-open i,
+.decision .row-decision_tab .col-decision_tab .tab .panel-body .decision-open_hide i {
+  color: #fe5c2e;
+  font-size: 1.3rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .img-decision {
+  display: inline-block;
+  width: 10rem;
+  text-align: right;
+  height: 5.5rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .img-decision img {
+  padding-top: 2rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab:hover {
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.decision .row-decision_tab .col-decision_tab .tab:hover .img-decision {
+  background: url("../img/decision/hover.png") no-repeat 5.3rem 2.5rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab:hover .decision-open span {
+  color: #e0481a;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .panel-body {
+  width: 36rem;
+  height: 33rem;
+  box-shadow: 0 0 0 0 rgba(57,57,69,.05);
+  position: absolute;
+  left: 1.5rem;
+  top: 17rem;
+  padding-left: 4.5rem;
+  padding-right: 2.5rem;
+  background-color: #fff;
+  z-index: 30;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .panel-body .decision-open_hide {
+  position: absolute;
+  bottom: 3rem;
+  height: 2rem;
+}
+
+.decision .row-decision_tab .col-decision_tab .tab .panel-body .decision-open_hide span {
+  font-size: 1.2rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fe5c2e;
+  line-height: 4.998;
+  text-align: left;
+}
+
+.systems .row-systems_h1 {
+  margin-top: 2rem;
+}
+
+.systems .row-systems_h1 h1 {
+  line-height: 1.4;
+}
+
+.systems .row-systems_h2 h2 {
+  margin: auto;
+  width: 100rem;
+}
+
+.systems .row-systems_logo {
+  margin-top: 3rem;
+}
+
+.systems .row-systems_logo .hover-img {
+  display: inline-block;
+  width: 8rem;
+  height: 3.5rem;
+}
+
+.systems .row-systems_logo .hover-one {
+  background: url("../img/systems/1.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-one:hover {
+  background: url("../img/systems/1-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-systems_logo .hover-two {
+  background: url("../img/systems/2.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-two:hover {
+  background: url("../img/systems/2-hover.png") no-repeat center center;
+  -webkit-background-size: 50px;
+  -o-background-size: 50px;
+  background-size: 50px;
+}
+
+.systems .row-systems_logo .hover-three {
+  background: url("../img/systems/3.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-three:hover {
+  background: url("../img/systems/3-hover.png") no-repeat center center;
+  -webkit-background-size: 54px;
+  -o-background-size: 54px;
+  background-size: 54px;
+}
+
+.systems .row-systems_logo .hover-four {
+  background: url("../img/systems/4.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-four:hover {
+  background: url("../img/systems/4-hover.png") no-repeat center center;
+  -webkit-background-size: 76px;
+  -o-background-size: 76px;
+  background-size: 76px;
+}
+
+.systems .row-systems_logo .hover-five {
+  background: url("../img/systems/5.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-five:hover {
+  background: url("../img/systems/5-hover.png") no-repeat center center;
+  -webkit-background-size: 66px;
+  -o-background-size: 66px;
+  background-size: 66px;
+}
+
+.systems .row-systems_logo .hover-six {
+  background: url("../img/systems/6.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-six:hover {
+  background: url("../img/systems/6-hover.png") no-repeat center center;
+  -webkit-background-size: 67px;
+  -o-background-size: 67px;
+  background-size: 67px;
+}
+
+.systems .row-systems_logo .hover-seven {
+  background: url("../img/systems/7.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-seven:hover {
+  background: url("../img/systems/7-hover.png") no-repeat center center;
+  -webkit-background-size: 73px;
+  -o-background-size: 73px;
+  background-size: 73px;
+}
+
+.systems .row-systems_logo .hover-eight {
+  background: url("../img/systems/8.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-eight:hover {
+  background: url("../img/systems/8-hover.jpg") no-repeat center center;
+  -webkit-background-size: 38px;
+  -o-background-size: 38px;
+  background-size: 38px;
+}
+
+.systems .row-systems_logo .hover-nine {
+  background: url("../img/systems/9.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-nine:hover {
+  background: url("../img/systems/9-hover.png") no-repeat center center;
+  -webkit-background-size: 72px;
+  -o-background-size: 72px;
+  background-size: 72px;
+}
+
+.systems .row-systems_logo .hover-ten {
+  background: url("../img/systems/10.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-ten:hover {
+  background: url("../img/systems/10-hover.png") no-repeat center center;
+  -webkit-background-size: 80px;
+  -o-background-size: 80px;
+  background-size: 80px;
+}
+
+.systems .row-systems_logo .hover-eleven,
+.systems .row-systems_logo .hover-eleven:hover {
+  background: url("../img/systems/11.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-eleven:hover {
+  -webkit-background-size: 85px;
+  -o-background-size: 85px;
+  background-size: 85px;
+}
+
+.systems .row-systems_logo .hover-twelve {
+  background: url("../img/systems/12.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-twelve:hover {
+  background: url("../img/systems/12-hover.png") no-repeat center center;
+  -webkit-background-size: 62px;
+  -o-background-size: 62px;
+  background-size: 62px;
+}
+
+.systems .row-systems_logo .hover-thirteen {
+  background: url("../img/systems/13.png") no-repeat center center;
+}
+
+.systems .row-systems_logo .hover-thirteen:hover {
+  background: url("../img/systems/13-hover.png") no-repeat center center;
+  -webkit-background-size: 57px;
+  -o-background-size: 57px;
+  background-size: 57px;
+}
+
+.systems .row-systems_tab {
+  margin-top: 4rem;
+}
+
+.systems .row-systems_tab .marg {
+  margin-right: .8rem;
+}
+
+.systems .row-systems_tab .marg a:hover {
+  background-color: #fe5c2e;
+  color: #fff;
+  border: 0;
+}
+
+.systems .row-systems_tab .marg a:active {
+  outline: 0;
+}
+
+.systems .row-systems_tab .act {
+  background-color: #393945;
+  color: #fff!important;
+}
+
+.systems .row-systems_tab .clicked {
+  background-color: #555;
+}
+
+.systems .row-systems_tab .bi,
+.systems .row-systems_tab .crm,
+.systems .row-systems_tab .csm,
+.systems .row-systems_tab .erp,
+.systems .row-systems_tab .it,
+.systems .row-systems_tab .wms {
+  display: inline-block;
+}
+
+.systems .row-systems_tab .bi a,
+.systems .row-systems_tab .crm a,
+.systems .row-systems_tab .erp a {
+  display: block;
+  width: 15.8rem;
+  height: 5.4rem;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 5.4rem;
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.systems .row-systems_tab .bi a {
+  width: 7.2rem;
+}
+
+.systems .row-systems_tab .csm a {
+  width: 8.9rem;
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+}
+
+.systems .row-systems_tab .csm a,
+.systems .row-systems_tab .it a,
+.systems .row-systems_tab .wms a {
+  display: block;
+  height: 5.4rem;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 5.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.systems .row-systems_tab .wms a {
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  width: 16.5rem;
+}
+
+.systems .row-systems_tab .it a {
+  width: 21.3rem;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_h1 {
+  width: 77rem;
+  margin: auto;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_h1 h1 {
+  font-size: 1.8rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_h2 {
+  width: 91rem;
+  margin: auto;
+}
+
+.systems .row-systems_tab .it a,
+.systems .row-tab_content .col-tab_content .tab-content_h2 h2 {
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_ul li {
+  display: block;
+  line-height: 1.4rem;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_ul li .check {
+  display: inline-block;
+  position: relative;
+  top: .5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../img/systems/icon-check-grey.png") no-repeat center center;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_ul li:hover .check {
+  background: url("../img/systems/icon-check-orange.png") no-repeat center center;
+}
+
+.systems .row-tab_content .col-tab_content .tab-content_h3 h3 {
+  font-size: 20px;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.systems .row-tab_content .col-tab_content .row-tab_content .col-tab_content {
+  text-align: left;
+  display: flex;
+  -webkit-justify-content: top;
+  justify-content: top;
+}
+
+.systems .row-tab_content .col-tab_content .row-tab_content .col-tab_content .number p {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  margin-right: 1rem;
+  border: 1px solid #393945;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #fff;
+  background-color: #393945;
+}
+
+.systems .row-tab_content .col-tab_content .row-tab_content .col-tab_content span {
+  display: inline-block;
+  width: 29rem;
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 1.375;
+}
+
+.systems .row-tab_content .col-tab_content .row-tab_content .col-tab_content:hover p {
+  background-color: #fe5c2e;
+  border: 0;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon {
+  margin-top: 2rem;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon {
+  text-align: left;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .hover-icon {
+  display: inline-block;
+  margin-right: 5rem;
+  height: 5.5rem;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-one {
+  background: url("../img/systems/1.png") no-repeat center center;
+  width: 140px;
+  -webkit-background-size: 140px;
+  -o-background-size: 140px;
+  background-size: 140px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-one:hover {
+  background: url("../img/systems/1-hover.png") no-repeat center center;
+  -webkit-background-size: 140px;
+  -o-background-size: 140px;
+  background-size: 140px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-two {
+  width: 70px;
+  background: url("../img/systems/2.png") no-repeat center center;
+  -webkit-background-size: 70px;
+  -o-background-size: 70px;
+  background-size: 70px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-two:hover {
+  background: url("../img/systems/2-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-three {
+  background: url("../img/systems/3.png") no-repeat center center;
+  width: 62px;
+  -webkit-background-size: 62px;
+  -o-background-size: 62px;
+  background-size: 62px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-three:hover {
+  background: url("../img/systems/3-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-four {
+  background: url("../img/systems/4.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-four:hover {
+  background: url("../img/systems/4-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-five {
+  background: url("../img/systems/5.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-five:hover {
+  background: url("../img/systems/5-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-six {
+  background: url("../img/systems/6.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-six:hover {
+  background: url("../img/systems/6-hover.png") no-repeat center center;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-seven {
+  background: url("../img/systems/7.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-seven:hover {
+  background: url("../img/systems/7-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-eight {
+  background: url("../img/systems/8.png") no-repeat center center;
+  width: 62px;
+  -webkit-background-size: 62px;
+  -o-background-size: 62px;
+  background-size: 62px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-eight:hover {
+  background: url("../img/systems/8-hover.jpg") no-repeat center center;
+  -webkit-background-size: 62px;
+  -o-background-size: 62px;
+  background-size: 62px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-nine {
+  background: url("../img/systems/9.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-nine:hover {
+  background: url("../img/systems/9-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-ten {
+  background: url("../img/systems/10.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-ten:hover {
+  background: url("../img/systems/10-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-eleven {
+  background: url("../img/systems/11.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-eleven:hover {
+  background: url("../img/systems/11-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-twelve {
+  background: url("../img/systems/12.png") no-repeat center center;
+  width: 97px;
+  -webkit-background-size: 97px;
+  -o-background-size: 97px;
+  background-size: 97px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-twelve:hover {
+  background: url("../img/systems/12-hover.png") no-repeat center center;
+  -webkit-background-size: 71px;
+  -o-background-size: 71px;
+  background-size: 71px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-thirteen {
+  width: 70px;
+  background: url("../img/systems/13.png") no-repeat center center;
+  -webkit-background-size: 70px;
+  -o-background-size: 70px;
+  background-size: 70px;
+}
+
+.systems .row-tab_content .col-tab_content .row-icon .col-tab_icon .icon-thirteen:hover {
+  background: url("../img/systems/13-hover.png") no-repeat center center;
+  -webkit-background-size: 70px;
+  -o-background-size: 70px;
+  background-size: 70px;
+}
+
+.recourse .row-recourse_h1 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.recourse .row-recourse_bottom p,
+.recourse .row-recourse_h1 h1,
+.stage .row-stage_h1 h1,
+.systems .row-systems_h1 h1 {
+  font-size: 4.4rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+}
+
+.recourse .row-recourse_h2 h2,
+.recourse .row-recourse_tab .col-recourse_tab p,
+.systems .row-systems_h2 h2 {
+  font-size: 1.8rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 1.4;
+}
+
+.recourse .row-recourse_h2,
+.recourse .row-recourse_tab {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab {
+  height: 20rem;
+  padding-top: 2rem;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab .img-block {
+  margin: auto;
+  width: 6rem;
+  height: 3.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab:hover {
+  cursor: pointer;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab:hover .img-block {
+  background: url("../img/recourse/hover.png") no-repeat 2rem;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab p {
+  font-size: 1.4rem;
+}
+
+.recourse .row-recourse_bottom {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.recourse .row-recourse_bottom p {
+  font-size: 1.8rem;
+  color: #fe5c2e;
+  text-decoration: underline;
+  line-height: 1.4;
+}
+
+.recourse .row-recourse_tab .col-recourse_tab:hover,
+.stage .row-stage_content,
+.stage .row-stage_tab .act-stage {
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab1,
+.stage .row-stage_tab .col-stage_tab2,
+.stage .row-stage_tab .col-stage_tab3,
+.stage .row-stage_tab .col-stage_tab4,
+.stage .row-stage_tab .col-stage_tab5 {
+  height: 25rem;
+  padding-top: 3rem;
+}
+
+.stage .row-stage_tab .col-stage_tab1 h1,
+.stage .row-stage_tab .col-stage_tab2 h1,
+.stage .row-stage_tab .col-stage_tab3 h1,
+.stage .row-stage_tab .col-stage_tab4 h1,
+.stage .row-stage_tab .col-stage_tab5 h1 {
+  font-size: 1.8rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: #393945;
+  text-transform: uppercase;
+}
+
+.stage .row-stage_tab .col-stage_tab1 p,
+.stage .row-stage_tab .col-stage_tab2 p,
+.stage .row-stage_tab .col-stage_tab3 p,
+.stage .row-stage_tab .col-stage_tab4 p,
+.stage .row-stage_tab .col-stage_tab5 p {
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: rgba(57,57,69,.502);
+  line-height: 1.5;
+}
+
+.stage .row-stage_tab .col-stage_tab1 .img-block1 {
+  height: 8.4rem;
+  width: 8.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("../img/stage/1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stage .row-stage_tab .col-stage_tab1:hover p,
+.stage .row-stage_tab .col-stage_tab2:hover p,
+.stage .row-stage_tab .col-stage_tab3:hover p,
+.stage .row-stage_tab .col-stage_tab4:hover p,
+.stage .row-stage_tab .col-stage_tab5:hover p {
+  color: #393945;
+}
+
+.stage .row-stage_tab .col-stage_tab1:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab1:hover .img-block1 {
+  background-color: #fe5c2e;
+  background-image: url("../img/stage/1-b.png");
+  background-repeat: no-repeat;
+}
+
+.stage .row-stage_tab .col-stage_tab2 .img-block2 {
+  height: 8.4rem;
+  width: 8.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("../img/stage/2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stage .row-stage_tab .col-stage_tab2:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab2:hover .img-block2 {
+  background-color: #fe5c2e;
+  background-image: url("../img/stage/2-b.png");
+  background-repeat: no-repeat;
+}
+
+.stage .row-stage_tab .col-stage_tab3 .img-block3 {
+  height: 8.4rem;
+  width: 8.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("../img/stage/3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stage .row-stage_tab .col-stage_tab3:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab3:hover .img-block3 {
+  background-color: #fe5c2e;
+  background-image: url("../img/stage/3-b.png");
+  background-repeat: no-repeat;
+}
+
+.stage .row-stage_tab .col-stage_tab4 .img-block4 {
+  height: 8.4rem;
+  width: 8.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("../img/stage/4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stage .row-stage_tab .col-stage_tab4:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab4:hover .img-block4 {
+  background-color: #fe5c2e;
+  background-image: url("../img/stage/4-b.png");
+  background-repeat: no-repeat;
+}
+
+.stage .row-stage_tab .col-stage_tab5 .img-block5 {
+  height: 8.4rem;
+  width: 8.4rem;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  background-image: url("../img/stage/5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stage .row-stage_tab .col-stage_tab5:hover {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(57,57,69,.05);
+}
+
+.stage .row-stage_tab .col-stage_tab5:hover .img-block5 {
+  background-color: #fe5c2e;
+  background-image: url("../img/stage/5-b.png");
+  background-repeat: no-repeat;
+}
+
+.stage .row-stage_content {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.stage .row-stage_content .col-stage_content {
+  text-align: left;
+}
+
+.stage .row-stage_content .col-stage_content p {
+  font-size: 1.4rem;
+  font-family: "Museo Sans Cyrl 500";
+  color: #393945;
+  line-height: 1.4;
+}
+
+.stage .row-stage_content .col-stage_content:hover .step {
+  cursor: pointer;
+  color: #393945;
+  background: url("../img/recourse/hover.png") no-repeat 0 4px;
+}
+
+.stage .row-stage_content .col-stage_content .step {
+  height: 4rem;
+  margin: auto;
+}
+
+.stage .row-stage_content .col-stage_content .step h1 {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  font-family: "Museo Sans Cyrl 700";
+  color: rgba(57,57,69,.5);
+  text-transform: uppercase;
+}

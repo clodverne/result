@@ -1,0 +1,37 @@
+width: 158px;
+height: 54px;
+
+width: 158px;
+height: 54px;
+
+border-radius: 5px;
+background-color:  #393945;
+width: 72px;
+height: 55px;
+
+width: 89px;
+height: 54px;
+
+border-radius: 5px;
+background-color:  #fe5c2e;
+width: 165px;
+height: 55px;
+
+width: 213px;
+height: 54px;
+
+.Система_ERP {
+  font-size: 14px;
+  font-family: "Museo Sans Cyrl";
+  color: rgb(57, 57, 69);
+  text-transform: uppercase;
+  line-height: 4.226;
+  text-align: left;
+  -moz-transform: matrix( 1.00167142811253,0,0,0.986584892509,0,0);
+  -webkit-transform: matrix( 1.00167142811253,0,0,0.986584892509,0,0);
+  -ms-transform: matrix( 1.00167142811253,0,0,0.986584892509,0,0);
+  position: absolute;
+  left: 261.064px;
+  top: 2765.014px;
+  z-index: 205;
+}
